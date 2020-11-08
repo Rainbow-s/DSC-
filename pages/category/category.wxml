@@ -1,0 +1,31 @@
+<!--pages/category/category.wxml-->
+<searchH></searchH>
+<view class="category" >
+  <!-- 左边数据 -->
+  <view class="left">
+    <view class="left-item {{currentIndex==index?'active':''}}" bindtap="changePage" wx:for="{{listData}}" wx:key="index" data-index="{{index}}"
+      data-cat_id="{{item.cat_id}}">{{item.cat_name}}</view>
+  </view>
+  <!-- 右边数据 -->
+  <view class="right-wrap">
+    <view class="right">
+      <view class="ad">
+        <image src="{{listData[adindex].touch_catads}}"></image>
+      </view>
+      <view class="goods" wx:for="{{rightData}}" wx:key="index">
+        <view class="goods-title">{{item.cat_name}}</view>
+        <view class="goods-list">
+          <view  class="goods-item" wx:for="{{item.child}}" wx:key="index" data-cat_id="{{item.cat_id}}" bindtap="togoodsInfo">
+            <navigator class="to-url" url="/pages/goodslist/goodslist?cat_id={{item.cat_id}}" >
+               <image src="{{item.touch_icon}}"></image>
+            <text>{{item.cat_name}}</text>
+            </navigator>
+           
+          </view>
+         
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>

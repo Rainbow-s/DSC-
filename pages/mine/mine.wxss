@@ -1,0 +1,34 @@
+/* pages/mine/mine.wxss */
+.login{
+  width: 100%;
+  height:80rpx;
+  margin-top: 200px;
+}
+/* 蒙版授权 */
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.user-info{
+  width: 100%;
+  height: 500rpx;
+  margin-top: 100rpx;
+  background-color: rosybrown;
+}
+.user-info image{
+  width: 100%;
+  height: 500rpx;
+}
+.hello{
+  width: 100%;
+text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: skyblue;
+  color: #fff;
+}

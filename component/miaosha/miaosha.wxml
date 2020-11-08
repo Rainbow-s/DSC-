@@ -1,0 +1,14 @@
+<!--component/miaosha/miaosha.wxml-->
+<view class="miaosha-wrap">
+<view class="header-top">
+  <view class="miaosha-logo">
+    <image class="miaosha-img" src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978468241.png?imageView2/2/format/webp">
+
+    </image>
+
+  </view>
+  <view class="timeover">
+    距结束还剩  <text class="time">3</text> 天<text class="time">2</text>小时<text class="time">5</text>分<text class="time">16</text>秒
+  </view>
+</view>  
+</view>

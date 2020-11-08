@@ -1,0 +1,50 @@
+<!--pages/goodslist/goodslist.wxml-->
+<view class="goodslist-wrap" bindscroll="scrollFn">
+  <!-- 头部 -->
+  <view class="goods-header">
+    <view class="input"></view>
+    <text class="iconfont icon-sousuo"></text>
+    <view class="change-wrap" bindtap="change">
+      <view class="change" wx:if="{{changeList}}">块</view>
+      <view class="changed" wx:else>长</view>
+    </view>
+  </view>
+  <!-- 货品列表 -->
+  <view class="goods-nav">
+    <view class="nav-item">
+      <text>综合</text>
+    </view>
+    <view class="nav-item">
+      <text>新品</text>
+    </view>
+    <view class="nav-item">
+      <text>销量</text>
+    </view>
+    <view class="nav-item">
+      <text>价格</text>
+    </view>
+    <view class="nav-item">
+      <text>筛选</text>
+    </view>
+  </view>
+  <!-- 货品 -->
+  <view class="goods-list" bindscroll="scrollFn">
+    <navigator class="{{changeList?'goods-item':'goods-item-c'}}" url="/pages/goodsinfo/goodsinfo?goods_id={{item.goods_id}}" wx:for="{{goodsData}}" wx:key="index">
+      <view class="img">
+        <image
+          src="{{item.goods_img}}">
+        </image>
+      </view>
+      <view class="tp-wrap">
+        <view class="title">
+          <text>{{item.goods_name}}</text>
+        </view>
+        <view class="price">
+          <text>{{item.market_price_formated}}</text>
+        </view>
+      </view>
+
+    </navigator>
+  </view>
+
+</view>

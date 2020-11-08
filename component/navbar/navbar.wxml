@@ -1,0 +1,8 @@
+<!--component/navbar/navbar.wxml-->
+  <view class="navbar">
+    <view class="header-wrap">
+      <input class="input" type="text" placeholder="搜索商品名称"/>
+      <text class="iconfont icon-sousuo"></text>
+      <text class="iconfont icon-xiaoxi "></text>
+    </view>
+  </view>

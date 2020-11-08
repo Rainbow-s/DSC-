@@ -1,0 +1,14 @@
+{ 
+  "usingComponents": {
+  "br":"../../component/br/br"
+
+
+  },
+ "navigationStyle":"default",
+ "navigationBarTitleText": "大商创111"
+
+
+
+
+
+}

@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+<view class="header">
+
+  <view class="fix" style="background:{{Bacs[BacIndex]}}">
+    <navbar />  
+    <scroll-view scroll-x="true" scroll-left="{{scrollLeft}}">
+      <view class="tab-nav">
+        <view class="tab-item {{currentIndex==index?'active':''}}" wx:for="{{navData}}" wx:key="index"
+          bindtap="changePage" data-current="{{index}}">
+          {{item.title}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+<!-- 导航内容 -->
+  
+<swiper style="height:2000rpx" current="{{currentIndex}}" bindchange="changeNav" >
+  <!-- 首页 -->
+  <swiper-item>
+    <banner />
+    <goodsNav/>
+    <swiperNews newsData="{{newsData}}"/>
+    <miaosha/>
+  </swiper-item>
+
+
+
+  <swiper-item>家用电器</swiper-item>
+  <swiper-item>男装女装</swiper-item>
+  <swiper-item>鞋靴箱包</swiper-item>
+  <swiper-item>手机数码</swiper-item>
+  <swiper-item>电脑办公</swiper-item>
+  <swiper-item>家具家纺</swiper-item>
+  <swiper-item>个人化妆</swiper-item>
+</swiper>

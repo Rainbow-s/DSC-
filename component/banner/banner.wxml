@@ -1,0 +1,26 @@
+<!--component/swiper/swiper.wxml-->
+<view class="swiper">
+  <swiper class="swiper-wrap" indicator-dots autoplay circular interval="2000" bindchange="changeBg" bindmyevent="myevent">
+    <swiper-item class="swiper-item">
+      <image class="image"
+        src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978394783.jpg"></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class="image"
+        src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978396430.jpg"></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class="image"
+        src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978395241.jpg"></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class="image"
+        src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978395260.jpg"></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class="image"
+        src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978397105.jpg"></image>
+    </swiper-item>
+
+  </swiper>
+</view>

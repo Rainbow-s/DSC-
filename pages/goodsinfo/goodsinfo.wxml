@@ -1,0 +1,188 @@
+<!--pages/goodsinfo/goodsinfo.wxml-->
+<!-- 头部 -->
+<view>1111</view>
+<!-- 商品详细信息 -->
+<view style="height:{{winH}}px;" class="box">
+  <!-- 轮播图 -->
+  <view class="goods-swiper">
+    <swiper indicator-dots autoplay interval="2000" circular indicator-color="gray" indicator-active-color="red">
+
+      <swiper-item wx:for="{{goodsInfoData.gallery_list}}" wx:key="index">
+        <image src="{{item.img_url}}">
+        </image>
+      </swiper-item>
+    </swiper>
+
+  </view>
+  <!-- 商品价格 -->
+  <view class="goods_item goods_price">
+    <text class="now_price">{{goodsInfoData.membership_card_discount_price_formated}}</text>
+    <text class="old_price">{{goodsInfoData.market_price_formated}}</text>
+  </view>
+  <!-- 会员 -->
+  <view class="goods_vip">
+    <view class="vip-item icon-vip">
+      <image src="https://x.dscmall.cn/static/dist/img/icon-vip.png"></image>
+      <text class="vip-title">高级VIP享超值优惠价￥</text>
+      <text class="vip-price">{{goodsInfoData.membership_card_discount_price}}</text>
+    </view>
+    <view class="vip-tem to-vip">立即开通 ></view>
+  </view>
+  <!-- 商品标题 -->
+  <view class="goods_item goods_title">
+    {{goodsInfoData.goods_name}}
+  </view>
+  <!-- 商品详情 -->
+  <view class="goods_info">
+    <view class="info-item allNum">累计销量
+      <text>22</text>
+    </view>
+    <view class="info-item store">库存
+      <text>500</text>
+    </view>
+    <view class="info-item address">
+      上海市 上海市
+    </view>
+  </view>
+  <br></br>
+  <!-- 赠送积分 -->
+  <view class="give-jifen">
+    赠送积分:<text>{{goodsInfoData.give_integral}}</text>
+  </view>
+  <br></br>
+  <!-- 已选商品个数 -->
+  <view class="selector-goods" bindtap="showMaskFn">
+    <view >
+      <text class="selector-title">已选: </text>
+      <text>{{goods_num}}</text>
+    </view>
+    <view>
+      <text class="iconfont icon-jiantou2"></text>
+    </view>
+  </view>
+  <br></br>
+  <!-- 滑出的模态框 -->
+  <view class="mask" wx:if="{{showMask}}" >
+    <view class="mask-mask" bindtap="close"></view>
+    <view class="mask-inner" animation="{{animationData}}">
+      <view class="goods-info">
+        <view class="goods-img">
+          <image src="{{goodsInfoData.goods_img}}" alt="" />
+        </view>
+        <view class="goods-detail">
+          <view class="goods-title">
+            <text>{{goodsInfoData.goods_name}}</text>
+          </view>
+          <view class="goods-price" style="width:100%">
+            <text>{{goodsInfoData.membership_card_discount_price_formated}}</text>
+          </view>
+          <view class="store-num">
+            <text>库存:499</text>
+          </view>
+        </view>
+        <!-- 关闭按钮 -->
+        <view class="close">
+          <view class="iconfont icon-chahao" bindtap="close">
+
+          </view>
+        </view>
+      </view>
+      <!-- 商品数量控制 -->
+      <view class="goods-control">
+        <view class="num">
+          <text>数量</text>
+        </view>
+        <view class="num-control">
+
+          <view class="reduce btn" bindtap="changeNum" data-num="0">-</view>
+
+          <view class="input">
+            {{goods_num}}
+
+          </view>
+          <view class="add btn" bindtap="changeNum" data-num="1">+</view>
+
+        </view>
+      </view>
+      <!-- 加入购物车 立即购买 -->
+      <view class="buy-control">
+        <view class="gobuy">立即购买</view>
+        <view class="addcart" bindtap="addCart">确定</view>
+      </view>
+    </view>
+  </view>
+  <!-- 商家信息 -->
+  <view class="shop-info">
+    <view class="shop">
+      <view class="shop-icon">
+        <image src="https://x.dscmall.cn/storage/images/seller_imgs/seller_logo/logo_thumb/1598316246303568918.jpg">
+        </image>
+      </view>
+      <view class="shop-title">
+        <view class="shop-name">
+          <text>创造旗舰店</text>
+          <text class="iconfont icon-xiangqingyeshangpu" style="color:red"></text>
+        </view>
+        <view>已经有
+          <text>10</text>
+          人关注
+        </view>
+
+      </view>
+      <view class="shop-guanzhu">
+        未关注
+      </view>
+    </view>
+    <!-- 评分 -->
+    <view class="leavel">
+      <view class="leavel-item">
+        <view class="goods">
+          商品 <text>5分</text>
+        </view>
+        <view class="lev">
+          高
+        </view>
+      </view>
+      <view class="leavel-item">
+        <view class="goods">
+          服务 <text style="color:green">5分</text>
+        </view>
+        <view class="lev" style="background:green">
+          高
+        </view>
+      </view>
+      <view class="leavel-item">
+        <view class="goods">
+          时效 <text style="color:#f447c9;">5分</text>
+        </view>
+        <view class="lev" style="background:#f447c9;">
+          高
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="info-footer">
+    <view class="footer-item kefu">
+      <text class="iconfont icon-xiaoxi"></text>
+      <text>客服</text>
+    </view>
+    <view class="footer-item love">
+      <text class="iconfont icon-shoucang"></text>
+      <text>收藏</text>
+    </view>
+    <navigator url="/pages/cart/cart" class="footer-item cart" bindtap="goCart">
+      <text class="iconfont icon-gouwuche"></text>
+      <text>购物车</text>
+      <view class="goods_num">{{goods_num}}</view>
+    </navigator>
+    <view class="footer-item addcart" bindtap="addGoodNum">
+      加入购物车
+    </view>
+    <view class="footer-item gobuy">
+
+      立即购买
+    </view>
+
+  </view>
+</view>

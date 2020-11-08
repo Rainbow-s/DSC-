@@ -1,0 +1,134 @@
+<!--pages/cart/cart.wxml-->
+<scroll-view class="cart-wrap" scroll-y="true" bindscrolltolower="scrollFn">
+  <!-- 空空如也 -->
+
+  <view class="no-goods" wx:if="{{no_goods}}">
+    <view class="img">
+      <image src="https://x.dscmall.cn/static/dist/img/cart-empty.png"></image>
+    </view>
+
+    <view class="tips"><text>您的购物车还是空空的，快去逛逛吧！</text></view>
+    <view class="btn-control">
+      <view class="go-look">
+        <text>去逛逛</text>
+      </view>
+      <view class="to-mylove">
+        <text>看看关注</text>
+      </view>
+    </view>
+  </view>
+  <!-- 购物车 -->
+  <view class="cart" wx:else>
+    <!-- 地址 -->
+    <view class="my-address">
+      <view class="address">
+        <picker mode="region" value="{{city}}" bindchange="changeCity">
+          <view> ☆ {{city[0]}} {{city[1]}} {{city[2]}}</view>
+        </picker>
+      </view>
+      <view class="bianji">编辑商品</view>
+    </view>
+    <!-- 商家及货物 在这里开始循环 -->
+    <view class="shop" wx:for="{{goodsInfoData}}" wx:key="index" wx:for-index="fatherIndex" data-index="{{index}}">
+      <!-- 标题以及勾选状态 -->
+      <view class="shop-header">
+        <view class="check" bindtap="shopCheck" data-fatherIndex="{{fatherIndex}}">
+          <icon type="success_circle" wx:if="{{item.isShopSelect}}"></icon>
+          <icon type="circle" wx:else></icon>
+        </view>
+        <!-- 商铺名称 -->
+        <view class="shop-title">
+          <text>{{item.shop_name}}</text>
+        </view>
+      </view>
+      <!-- 商品信息 -->
+      <view class="shop-goodsinfo" wx:for="{{item.goods}}" wx:key="index" wx:for-index="childIndex">
+        <view class="check" data-fatherIndex="{{fatherIndex}}" data-childindex="{{childIndex}}" bindtap="changeCheck">
+          <icon type="success_circle" wx:if="{{item.isSelect}}"></icon>
+          <icon type="circle" wx:else></icon>
+        </view>
+        <view class="goods-info">
+          <view class="img">
+            <image src="{{item.goods_img}}"></image>
+          </view>
+          <view class="goods">
+            <view class="goods-name">
+              <text>{{item.goods_name}}</text>
+            </view>
+            <!-- 价格以及加减数目 -->
+            <view class="goods-control">
+              <!-- 价格 -->
+              <view class="goods-price">
+                <text>￥{{item.shop_price}}</text>
+              </view>
+              <!-- 商品数量 -->
+              <view class="goods-num-control">
+                <view class="num-control">
+                  <view class="reduce btn" bindtap="changeNum" data-id="0" data-fatherIndex="{{fatherIndex}}" data-childIndex="{{childIndex}}">-</view>
+                  <view class="input">
+                    {{item.buyNum}}
+
+                  </view>
+                  <view class="add btn" bindtap="changeNum" data-id="1" data-fatherIndex="{{fatherIndex}}" data-childIndex="{{childIndex}}">+</view>
+                </view>
+
+                <!-- <view class="my-love">
+                  <text class="iconfont icon-shoucang"></text>
+
+                </view> -->
+                <view class="del" bindtap="del" >
+                  <text class="iconfont icon-shanchu"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 全选 -->
+  <view class="computed-wrap">
+    <view class="computed">
+      <view class="check" bindtap="checkAll">
+        <icon type="success_circle" wx:if="{{isSelectAll}}"></icon>
+        <icon type="circle" wx:else></icon>
+      </view>
+      <text>全选</text>
+    </view>
+    <view class="total-price">
+      合计:{{totalPrice}}
+    </view>
+    <view class="gobuy">
+      去结算({{total}})
+    </view>
+  </view>
+  <!-- 猜你喜欢 -->
+  <view class="goods-guess">
+    <view class="title">
+      <text>————</text>
+      猜你喜欢
+      <text>————</text>
+    </view>
+    <view class="goods-list">
+      <view class="goods-item" wx:for="{{ goodsGuessData}}" wx:key="index">
+        <view class="goods-img">
+          <image src="{{item.goods_thumb}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>{{item.goods_name}}</text>
+        </view>
+        <view class="goods-price">
+          <text>{{item.shop_price_formated}}</text>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+
+
+</scroll-view>

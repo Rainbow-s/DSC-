@@ -1,0 +1,116 @@
+/* pages/category/category.wxss */
+.category {
+  width: 100%;
+  display: flex;
+  /* background-color: skyblue; */
+}
+
+.category .left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 96rpx; 
+  left: 0;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  /* background-color: #ccc; */
+}
+
+.left .left-item {
+  width: 100%;
+  height: 80rpx;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.left-item.active{
+  border-left: 2px solid red;
+  color: #f00;
+}
+/* 右边
+ */
+.right-wrap {
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+  margin-top: 95rpx;
+
+  overflow-y: auto;
+
+  /* background-color: tomato; */
+}
+
+.right {
+  width: 90%;
+  overflow-y: auto;
+  margin-left: 5%;
+  height: 100%;
+  overflow: hidden;
+  /* background-color: teal; */
+}
+
+.right .ad {
+  width: 100%;
+  height: 182rpx;
+}
+
+.ad image {
+  width: 100%;
+  height: 182rpx;
+
+}
+
+.goods {
+  /* display: flex; */
+  width: 100%;
+  margin-top: 20rpx;
+
+}
+
+.goods-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.goods .goods-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+
+}
+
+.goods-list .goods-item {
+  width: 33.33%;
+  /* background-color: green; */
+  height: 164rpx;
+ 
+  margin-bottom: 30rpx;
+}
+.goods-item .to-url{
+  width: 100%;
+  height: 164rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.goods-item image {
+  width: 110rpx;
+  height: 110rpx;
+
+}
+
+.goods-item text {
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "navbar":"../../component/navbar/navbar",
+    "banner":"../../component/banner/banner",
+    "goodsNav":"../../component/goodsNav/goodsNav",
+    "swiperNews":"../../component/swiperNews/swiperNews",
+    "miaosha":"../../component/miaosha/miaosha"
+  },
+ "navigationStyle":"default"
+
+}

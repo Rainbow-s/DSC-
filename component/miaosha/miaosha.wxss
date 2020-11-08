@@ -1,0 +1,34 @@
+/* component/miaosha/miaosha.wxss */
+.miaosha-wrap{
+  width: 96%;
+  margin-left: 2%;
+  height: 720rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx #ccc;
+}
+.miaosha-wrap .header-top{
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 111rpx;
+  /* background-color: rebeccapurple; */
+}
+.header-top .miaosha-logo{
+  width: 200rpx;
+  height: 43rpx;
+  /* background-color: red; */
+}
+.miaosha-logo .miaosha-img{
+  width: 100%;
+  height: 100%;
+}
+.timeover{
+  font-size: 28rpx;
+}
+.timeover .time{
+  color: red;
+  font-weight: 800;
+}

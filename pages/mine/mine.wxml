@@ -1,0 +1,19 @@
+<!--pages/mine/mine.wxml-->
+<view class="login" hidden="{{showLogin}}">
+  <button type="primary" bindtap="showMask"> 登录</button>
+</view>
+
+
+<!-- 授权 -->
+<view class="mask" hidden="{{showMask}}">
+  <button style="margin-top:200px" open-type="getUserInfo" bindgetuserinfo="getUserInfoFn">请授权</button>
+</view>
+
+<view class="user-info">
+  <view class="img">
+    <image src="{{userInfo.avatarUrl}}" alt=""/>
+  </view>
+</view>
+<view class="hello">
+  欢迎{{userInfo.nickName}}
+</view>

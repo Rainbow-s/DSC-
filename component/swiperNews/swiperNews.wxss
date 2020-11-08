@@ -1,0 +1,91 @@
+/* component/swiperNews/swiperNews.wxss */
+.swiper-news-wrap {
+  width: 96%;
+  margin-left: 2%;
+  height: 96rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx #ccc;
+  margin-top: 20rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.swiper-news {
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-news .left-logo {
+  margin-top: 4rpx;
+  width: 20%;
+  margin-left: 4%;
+
+}
+
+.swiper-news .left-logo .logo {
+  width: 100%;
+  height: 60rpx;
+}
+
+.swiper-news .right-news {
+  position: relative;
+  width: 74%;
+  height: 96rpx;
+  float: right;
+  line-height: 96rpx;
+  font-size: 24rpx;
+  font-weight: 900;
+
+}
+
+.right-news .news {
+  width: 100%;
+  height: 100%;
+}
+
+.right-news .more {
+  position: absolute;
+  top: 32rpx;
+  right: 12rpx;
+  line-height: 96rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border: 1px solid red;
+  border-radius: 32rpx;
+  z-index: 998;
+  line-height: 32rpx;
+  text-align: center;
+  color: red;
+  font-weight: 900;
+  font-size: 23rpx;
+}
+
+.more .icon-jiantou1 {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+/* 开学促销 */
+.kaixue-wrap {
+  width: 96%;
+  margin-left: 2%;
+  height: 348rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 20rpx #ccc;
+
+}
+
+.kaixue-wrap .item {
+  width: 100%;
+
+}
+
+.item .goods-img {
+  width: 100%;
+  height: 348rpx;
+}

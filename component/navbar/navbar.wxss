@@ -1,0 +1,44 @@
+/* component/navbar/navbar.wxss */
+@import "../../asset/fonts/iconfont.wxss";
+.navbar{
+  width: 100%;
+  height: 96rpx;
+  /* border-bottom: 1px solid #efefef; */
+}
+.header-wrap{
+  width: 96%;
+  height: 96rpx;
+  /* background-color: green; */
+  margin-left: 2%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.header-wrap .input{
+  width: 90%;
+  height: 60rpx;
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  margin-top: 18rpx;
+  border: 1px solid #efefef;
+  border-radius: 30rpx;
+  margin-right: 30rpx;
+  background-color: #fff;
+
+}
+.header-wrap .icon-xiaoxi{
+  /* width: 5%; */
+  line-height: 96rpx;
+  font-size: 40rpx;
+ 
+color: #fff;
+  display: inline-block;
+  height: 100%;
+}
+.header-wrap .icon-sousuo{
+  position: absolute;
+  right: 103rpx;
+  height: 96rpx;
+  color: #ccc;
+  line-height: 98rpx;
+}

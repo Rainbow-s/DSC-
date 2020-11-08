@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+   "searchH":"../../component/searchH/searchH"
+  },
+ "navigationStyle":"default"
+
+}

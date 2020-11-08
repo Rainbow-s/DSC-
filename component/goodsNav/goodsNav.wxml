@@ -1,0 +1,263 @@
+<!--component/goodsNav/goodsNav.wxml-->
+<view class="swiper-wrap">
+  <swiper class="swiper"  indicator-dots="true">
+    <swiper-item class="swiper-item">
+      <view class="goods-list">
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/9JVcPMp5TemauXCVQxnIY50u80vcxnFGfnn33CKh.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">潮流服饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/EaINOz1VE3yvzyO6l2LoHNRQHt0iGXrk1uhfvwEf.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">箱包配饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/ZHsZuTkcuZGa7Mu4n5W1E6qsRQQBtkl9fzByJsUk.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">美容护肤</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/8vjN7XPR9BD1BGqGYDGmJiQvk1UPH4duF4csjuaV.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">母婴儿童</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xypYud8p2sTivnyrf3cSmVwLt5ZalTtHraQqGYCl.png">
+            </image>
+            <text class="info">手机数码</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xnzngK6mJ1VamCDXKd5GH51C3asWfCnd8btRiZn2.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">微社区</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/3QggHJzSCrK1osf8DUYQxCUC3RhxaUySDkc5EMoC.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">拼团</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/JMambFMHt5z76qndHS0I0mjDCEr2u20JM7zDtMlr.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">预售</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/jUsageRXcEmvz0G8QutdBJ9IJgUxFsxgWAgdpHeA.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">拍卖</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/KhlceHTjkqz49Bzijf4HWtumIuIf1E45a7l1aOAJ.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">超值礼包</text>
+          </a>
+        </view>
+
+
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <view class="goods-list">
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/9JVcPMp5TemauXCVQxnIY50u80vcxnFGfnn33CKh.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">潮流服饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/EaINOz1VE3yvzyO6l2LoHNRQHt0iGXrk1uhfvwEf.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">箱包配饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/ZHsZuTkcuZGa7Mu4n5W1E6qsRQQBtkl9fzByJsUk.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">美容护肤</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/8vjN7XPR9BD1BGqGYDGmJiQvk1UPH4duF4csjuaV.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">母婴儿童</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xypYud8p2sTivnyrf3cSmVwLt5ZalTtHraQqGYCl.png">
+            </image>
+            <text class="info">手机数码</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xnzngK6mJ1VamCDXKd5GH51C3asWfCnd8btRiZn2.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">微社区</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/3QggHJzSCrK1osf8DUYQxCUC3RhxaUySDkc5EMoC.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">拼团</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/JMambFMHt5z76qndHS0I0mjDCEr2u20JM7zDtMlr.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">预售</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/jUsageRXcEmvz0G8QutdBJ9IJgUxFsxgWAgdpHeA.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">拍卖</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/KhlceHTjkqz49Bzijf4HWtumIuIf1E45a7l1aOAJ.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">超值礼包</text>
+          </a>
+        </view>
+
+
+
+
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <view class="goods-list">
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/9JVcPMp5TemauXCVQxnIY50u80vcxnFGfnn33CKh.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">潮流服饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/EaINOz1VE3yvzyO6l2LoHNRQHt0iGXrk1uhfvwEf.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">箱包配饰</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/ZHsZuTkcuZGa7Mu4n5W1E6qsRQQBtkl9fzByJsUk.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">美容护肤</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/8vjN7XPR9BD1BGqGYDGmJiQvk1UPH4duF4csjuaV.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">母婴儿童</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xypYud8p2sTivnyrf3cSmVwLt5ZalTtHraQqGYCl.png">
+            </image>
+            <text class="info">手机数码</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/xnzngK6mJ1VamCDXKd5GH51C3asWfCnd8btRiZn2.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">微社区</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/3QggHJzSCrK1osf8DUYQxCUC3RhxaUySDkc5EMoC.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">拼团</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/JMambFMHt5z76qndHS0I0mjDCEr2u20JM7zDtMlr.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">预售</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/jUsageRXcEmvz0G8QutdBJ9IJgUxFsxgWAgdpHeA.png?imageView2/2/format/webp">
+            </image>
+            <text class="info">拍卖</text>
+          </a>
+        </view>
+        <view class="goods-item">
+          <a href="javascript:;" class="item-wrap">
+            <image class="img"
+              src="https://x.dscmall.cn/storage/data/gallery_album/original_img/KhlceHTjkqz49Bzijf4HWtumIuIf1E45a7l1aOAJ.gif?imageView2/2/format/webp">
+            </image>
+            <text class="info">超值礼包</text>
+          </a>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

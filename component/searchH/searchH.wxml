@@ -1,0 +1,8 @@
+<!--component/searchH/searchH.wxml-->
+<view class="search-h">
+  <navigator url="../pages/home/home" class="icon">
+    <text class="history iconfont icon-jiantou3"></text>
+  </navigator>
+<input type="text" class="input" />
+<text class="iconfont icon-sousuo"></text>
+</view>

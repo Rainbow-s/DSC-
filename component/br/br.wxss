@@ -1,0 +1,6 @@
+/* component/br/br.wxss */
+.br{
+  width: 100%;
+  height: 20rpx;
+  background-color: #efefef;
+}

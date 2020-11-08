@@ -1,0 +1,35 @@
+/* component/searchH/searchH.wxss */
+@import "../../asset/fonts/iconfont.wxss";
+
+.search-h{
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20rpx #ccc;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+}
+.icon{
+  width: 11%;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  color: #ccc;
+  /* background-color: teal; */
+}
+.search-h .input{
+  width: 84%;
+  border-radius: 30rpx;
+  height: 60rpx;
+  border: 1px solid #ccc;
+}
+.icon-sousuo{
+  position: absolute;
+  height: 96rpx;
+  right: 23px;
+  color: #ccc;
+  font-weight: 300;
+  line-height: 96rpx;
+}

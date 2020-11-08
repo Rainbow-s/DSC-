@@ -1,0 +1,71 @@
+<!--pages/search/search.wxml-->
+<view class="search-h">
+  <navigator url="../pages/home/home" class="icon">
+    <text class="history iconfont icon-jiantou3"></text>
+  </navigator>
+<input type="text" class="input" />
+<text class="iconfont icon-sousuo"></text>
+<view class="go-good-list">
+  <text>搜索</text>
+</view>
+</view>
+<!-- 最近搜索 -->
+<view class="near-search">
+  <view class="title">
+    <view><text>最近搜索</text></view>
+    <view><text class="iconfont icon-shanchu"></text></view>
+  </view>
+  <view class="search-text">
+    <view class="search-item">
+      <text>电脑</text>
+    </view>
+    <view class="search-item">
+      <text>电脑</text>
+    </view>
+    <view class="search-item">
+      <text>电脑</text>
+    </view>
+    <view class="search-item">
+      <text>电脑</text>
+    </view>
+    <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view> <view class="search-item">
+      <text>电脑</text>
+    </view>
+  </view>
+</view>
+
+<!-- 热门搜索 -->
+<view class="near-search hot-search">
+  <view class="title">
+    <text>热门搜索</text>
+  </view>
+  <view class="search-text">
+    <view class="search-item">
+      <text>周大福</text>
+    </view>
+    <view class="search-item">
+      <text>内衣</text>
+    </view>
+    <view class="search-item">
+      <text>Five Plus</text>
+    </view>
+    <view class="search-item">
+      <text>手机</text>
+    </view>
+  </view>
+</view>
+
